@@ -1,0 +1,11 @@
+mumble_keyfile.pem
+mumble_certfile.pem
+mumble_cert.p12
+
+mumtrix.ini
+mumtrix_dev.ini
+
+.lesshst
+.python_history
+.bash*
+.local/
