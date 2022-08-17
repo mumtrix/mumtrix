@@ -20,10 +20,11 @@ TOC: <a href="#About">About</a> – <a href="#GettingStarted">Getting Started</a
     `python -m venv /path/to/new/virtual/environment`
 
   4. Activate venv
-    | Shell       | Command                            |
-    | ----------- | ---------------------------------- |
-    | bash/zsh    | `source <venv>/bin/activate`       |
-    | Windows CMD | `C:\> <venv>\Scripts\activate.bat` |
+
+  | Shell       | Command                            |
+  | ----------- | ---------------------------------- |
+  | bash/zsh    | `source <venv>/bin/activate`       |
+  | Windows CMD | `C:\> <venv>\Scripts\activate.bat` |
 
  > ℹ️ For other shells consult the [venv documentation](https://docs.python.org/3/library/venv.html)
 
@@ -37,10 +38,11 @@ TOC: <a href="#About">About</a> – <a href="#GettingStarted">Getting Started</a
 
 ## Usage {#Usage}
   1. Activate venv
-    | Shell       | Command                            |
-    | ----------- | ---------------------------------- |
-    | bash/zsh    | `source <venv>/bin/activate`       |
-    | Windows CMD | `C:\> <venv>\Scripts\activate.bat` |
+  
+  | Shell       | Command                            |
+  | ----------- | ---------------------------------- |
+  | bash/zsh    | `source <venv>/bin/activate`       |
+  | Windows CMD | `C:\> <venv>\Scripts\activate.bat` |
 
  > ℹ️ For other shells consult the [venv documentation](https://docs.python.org/3/library/venv.html)
 
