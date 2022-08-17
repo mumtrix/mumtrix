@@ -1,16 +1,16 @@
 # Mumtrix
 [If in plain md: Skip this section]: #
-TOC: <a href="#About">About</a> – <a href="#GettingStarted">Getting Started</a> – <a href="#Usage">Usage</a> – <a href="#License">License</a> – <a href="#Contribute">Contribute</a> – <a href="#Contact">Contact</a> – <a href="#Acknowledgments">Acknowledgments</a>
+TOC: [About](#about) – [Getting Started](#getting-started) – [Usage](#usage) – [License](#license) – [Contribute](#contribute) – [Contact](#contact) – [Acknowledgments](#acknowledgments)
 
-## About {#About}
+## About
 **Posts the current count of online users – on Mumble – to a Matrix room.**
 
-## Getting started {#GettingStarted}
-### Requirements {#Requirements}
+## Getting started
+### Requirements
   * Python 3
   * [Matrix Webhook](https://github.com/nim65s/matrix-webhook)
 
-### Installation {#Installation}
+### Installation
   1. Configure [Matrix Webhook](https://github.com/nim65s/matrix-webhook/blob/master/README.md) ❗️
 
   2. Clone the repo\
@@ -36,7 +36,7 @@ TOC: <a href="#About">About</a> – <a href="#GettingStarted">Getting Started</a
 
   7. Tailor the config `mumtrix.ini` to your needs
 
-## Usage {#Usage}
+## Usage
   1. Activate venv
   
   | Shell       | Command                            |
@@ -51,19 +51,19 @@ TOC: <a href="#About">About</a> – <a href="#GettingStarted">Getting Started</a
  3. Run Mumtrix\
     `python mumtrix.py`
 
-## Contribute {#Contribute}
+## Contribute
 See [github.com/firstcontributions](https://github.com/firstcontributions/first-contributions/blob/main/README.md).
 
-## License {#License}
+## License
 Distributed under the MIT License. See [LICENSE](./LICENSE) for more information.
 
-## Contact {#Contact}
+## Contact
 Matrix: [#mumtrix:cozy.town](https://matrix.to/#/#mumtrix:cozy.town)
 
 Github: [github.com/mumtrix](https://github.com/mumtrix/mumtrix)\
 Gitea (Mirror): [code.cozy.town/mumtrix](https://code.cozy.town/mumtrix/mumtrix)
 
-## Acknowledgments {#Acknowledgments}
+## Acknowledgments
   - [Ranomier](https://github.com/ranomier)
   - [azlux/pymumble](https://github.com/azlux/pymumble)
   - [nim65s/matrix-webhook](https://github.com/nim65s/matrix-webhook)
