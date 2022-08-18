@@ -61,8 +61,8 @@ I post the number of currently connected users - on this Mumble server – to Ma
         with open(config_path, 'w') as configfile:
             config.write(configfile)
 
-        print("Please edit the config file just created at", " '" + config_path + "' ", "and make sure to change all needed options")
-        print("For more information read the README.md (not yet implemented)")
+        print("Please edit the config file just created at '" + config_path + "' and make sure to change all required options.")
+        print("For more information consult the README.")
         sys.exit(1)
 
 
