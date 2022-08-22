@@ -53,7 +53,9 @@ I post the number of currently connected users - on this Mumble server – to Ma
                 "; Full room id is needed (including the \"!\")": None,
                 "JoinRoomID": "!example:example.org",
                 "; Insert user count with {currentUserCount}": None,
-                "CurrentUserCountMessage": "At the moment there are {currentUserCount} user(s) on the Mumble server.",
+                "CurrentUserCountMessageEmpty": "At the moment there is no user on Mumble.",
+                "CurrentUserCountMessageSingular": "At the moment there is one user on Mumble.",
+                "CurrentUserCountMessagePlural": "At the moment there are {currentUserCount} users on Mumble.",
                 "; You can get the api key from the matrix webhook config": None,
                 "ApiKey": ""
                 }
@@ -66,10 +68,24 @@ I post the number of currently connected users - on this Mumble server – to Ma
         sys.exit(1)
 
 
+def getNumerus(objectCount):
+    if objectCount == 0:
+        return "Empty"
+    elif objectCount == 1:
+        return "Singular"
+    elif objectCount > 1:
+        return "Plural"
+    else:
+        print("The object count is not valid.")
+        sys.exit(1)
+
+
 def generateMatrixMessage(cfg, currentUserCount):
     currentUserCount -= 1
+    currentUserCountMessageNumerus = "CurrentUserCountMessage" + getNumerus(currentUserCount)
+
     return {
-        "body": cfg["Matrix"]["CurrentUserCountMessage"].format(currentUserCount=str(currentUserCount)),
+        "body": cfg["Matrix"][currentUserCountMessageNumerus].format(currentUserCount=str(currentUserCount)),
         "key": cfg["Matrix"]["ApiKey"]
     }
 
@@ -115,7 +131,6 @@ def main():
         while True:
             currentUserCount = bot.users.count()
             print(currentUserCount)
-            #if currentUserCount != lastUserCount:
             if not first_message and currentUserCount != lastUserCount:
                 print("User count: " + str(currentUserCount - 1))
                 if not DRY_RUN:
