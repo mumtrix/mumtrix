@@ -9,7 +9,7 @@ from configparser import ConfigParser
 Connects to a Mumble server and sends current user count to a Matrix room.
 """
 
-__version__ = "0.3.1"
+__version__ = "0.4.0"
 DRY_RUN = False
 
 
